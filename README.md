@@ -1,8 +1,8 @@
-# Node.js Boilerplate
+# Node.js REST API + Socket server Boilerplate
 
 This is a boilerplate project for a Node.js server that includes a REST API and Socket server. The server can be configured via a `.env` file.
 
-
+# How to install the boilerplate
 > **Compatibility Note:**
 > Vite requires [Node.js](https://nodejs.org/en/) version 14.18+, 16+.
 
