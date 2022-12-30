@@ -1,6 +1,6 @@
 {
   "name": "create-jeff-backend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A REST API + Socket server boilerplate app",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-jeff-backend": "index.js"
+    "create-jeff-backend": "create.sh"
   },
   "author": "Jeffrey Arts <contact@jeffreyarts.nl>",
   "license": "MIT",
