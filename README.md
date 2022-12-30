@@ -2,7 +2,7 @@
 
 This is a boilerplate project for a Node.js server that includes a REST API and Socket server. The server can be configured via a `.env` file.
 
-# How to install the boilerplate
+## How to use
 > **Compatibility Note:**
 > Vite requires [Node.js](https://nodejs.org/en/) version 14.18+, 16+.
 
@@ -27,7 +27,7 @@ $ pnpm create vite
 Then follow the prompts!
 
 
-## License
+## [License](https://github.com/JeffreyArts/create-jeff-backend/blob/master/LICENSE)
 
 Copyright © 2023 <Jeffrey Arts>
 
