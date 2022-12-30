@@ -9,19 +9,19 @@ This is a boilerplate project for a Node.js server that includes a REST API and 
 With NPM:
 
 ```bash
-$ npm create vite@latest
+$ npm create jeff-backend@latest
 ```
 
 With Yarn:
 
 ```bash
-$ yarn create vite
+$ yarn create jeff-backend
 ```
 
 With PNPM:
 
 ```bash
-$ pnpm create vite
+$ pnpm create jeff-backend
 ```
 
 Then follow the prompts!
