@@ -1,6 +1,6 @@
 {
   "name": "create-jeff-backend",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A REST API + Socket server boilerplate app",
   "main": "index.js",
   "scripts": {
