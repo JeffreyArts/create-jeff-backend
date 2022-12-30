@@ -1,6 +1,6 @@
 {
   "name": "create-jeff-backend",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "A REST API + Socket server boilerplate app",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,7 @@
     "@socket.io/admin-ui": "^0.5.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "global": "^4.4.0",
     "lodash": "^4.17.21",
-    "nodemon": "^2.0.20",
     "socket.io": "^4.5.4"
   },
   "private": false
