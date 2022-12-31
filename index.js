@@ -10,12 +10,15 @@ const blacklist = [
 ]
 
 let inputDir, globalDir;
-if (process.env.npm_execpath.includes('yarn')) {
-    globalDir = require('child_process').execSync('yarn global dir').toString().trim();
-    inputDir = `${globalDir}/node_modules/create-jeff-backend/dist`;
-} else if (process.env.npm_execpath.includes('npm')) {
-    globalDir = require('child_process').execSync('npm root -g').toString().trim();
-    inputDir = `${globalDir}/create-jeff-backend/dist`;
+
+if (process.env.npm_execpath) {
+    if (process.env.npm_execpath.includes('yarn')) {
+        globalDir = require('child_process').execSync('yarn global dir').toString().trim();
+        inputDir = `${globalDir}/node_modules/create-jeff-backend/dist`;
+    } else if (process.env.npm_execpath.includes('npm')) {
+        globalDir = require('child_process').execSync('npm root -g').toString().trim();
+        inputDir = `${globalDir}/create-jeff-backend/dist`;      
+    }
 } else {
     inputDir = './dist';
 }
