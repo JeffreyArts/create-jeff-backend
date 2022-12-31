@@ -1,11 +1,14 @@
 {
   "name": "create-jeff-backend",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "A REST API + Socket server boilerplate app",
   "main": "index.js",
   "scripts": {
     "create": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-jeff-backend": "./index.js"
   },
   "repository": {
     "type": "git",
