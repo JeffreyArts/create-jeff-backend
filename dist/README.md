@@ -1,4 +1,4 @@
-# Node.js Boilerplate
+# Jeff-backend
 
 This is a boilerplate project for a Node.js server that includes a REST API and Socket server. The server can be configured via a `.env` file.
 
@@ -14,16 +14,16 @@ Before you begin, make sure that you have the following installed on your system
 1. Clone the repository:
 
 ```
-git clone https://github.com/user/nodejs-boilerplate.git
+$ git clone <insert repo here>
 ```
 
 
 2. Install the dependencies:
 
 ```
-npm install
+$ npm install
 or
-yarn
+$ yarn
 ```
 
 
@@ -53,13 +53,32 @@ To start the server, run the following command:
 
 
 ```
-npm start
+$ npm start
 or
-yarn start
+$ yarn start
 ``` 
 
-
 The server will start listening on the specified port for HTTP requests and Socket connections.
+
+
+For development use the following command:
+
+
+```
+$ npm run dev
+or
+$ yarn dev
+``` 
+This will do the same as the command before, but it will restart the server anytime you'd make a change to your code.
+
+And if you (have installed pm2 globally)[https://pm2.keymetrics.io/docs/usage/quick-start/] you can configure `ecosystem.config.js` to match your conditions and use the following command to deploy the app to a remote server.
+
+```
+$ npm run deploy
+or 
+$ yarn deploy
+```
+
 
 ## API Endpoints
 

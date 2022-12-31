@@ -1,7 +1,7 @@
 {
   "name": "{{appName}}",
   "version": "0.0.7",
-  "description": "",
+  "description": "A REST API + Socket server boilerplate app, using Express, socketIO, nodemon & pm2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +18,6 @@
     "socket.io": "^4.5.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20",
-    "pm2": "^5.2.2"
+    "nodemon": "^2.0.20"
   }
 }
