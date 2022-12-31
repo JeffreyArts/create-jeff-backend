@@ -1,33 +1,31 @@
-# Node.js Boilerplate
+# Node.js REST API + Socket server Boilerplate
 
 This is a boilerplate project for a Node.js server that includes a REST API and Socket server. The server can be configured via a `.env` file.
 
-
-> **Compatibility Note:**
-> Vite requires [Node.js](https://nodejs.org/en/) version 14.18+, 16+.
+## How to use
 
 With NPM:
 
 ```bash
-$ npm create vite@latest
+$ npm create jeff-backend@latest
 ```
 
 With Yarn:
 
 ```bash
-$ yarn create vite
+$ yarn create jeff-backend
 ```
 
 With PNPM:
 
 ```bash
-$ pnpm create vite
+$ pnpm create jeff-backend
 ```
 
 Then follow the prompts!
 
 
-## License
+## [License](https://github.com/JeffreyArts/create-jeff-backend/blob/master/LICENSE)
 
 Copyright © 2023 <Jeffrey Arts>
 
