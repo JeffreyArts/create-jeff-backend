@@ -6,7 +6,8 @@ const { exec } = require('child_process');
 
 const blacklist = [
     'node_modules',
-    'package-lock.json'
+    'package-lock.json',
+    'yarn.lock'
 ]
 
 let inputDir, globalDir;

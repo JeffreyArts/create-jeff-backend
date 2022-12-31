@@ -10,6 +10,10 @@ lerna-debug.log*
 node_modules
 *.local
 
+dist/yarn.lock
+dist/package-lock.json
+dist/dist
+
 # Editor directories and files
 .vscode/*
 .vscode
