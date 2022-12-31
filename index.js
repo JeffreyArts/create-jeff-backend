@@ -4,6 +4,11 @@ const fs = require('fs');
 const readline = require('readline');
 const { exec } = require('child_process');
 
+const blacklist = [
+    'node_modules',
+    'package-lock.json'
+]
+
 let inputDir, globalDir;
 if (process.env.npm_execpath.includes('yarn')) {
     globalDir = require('child_process').execSync('yarn global dir').toString().trim();
@@ -20,6 +25,10 @@ function copyRecursive(src, dest) {
     const files = fs.readdirSync(src);
 
     for (const file of files) {
+        if (blacklist.includes(file)) {
+            continue;
+        }
+
         const srcPath = `${src}/${file}`;
         const destPath = `${dest}/${file}`;
         const fileStat = fs.statSync(srcPath);
@@ -82,11 +91,15 @@ async function main() {
     envFile = envFile.replace('{{SOCKET_PORT}}', SOCKET_PORT);
     fs.writeFileSync(`${outputDir}/.env`, envFile);
 
-    if (process.env.npm_execpath.includes('yarn')) {
-        exec(`cd ${outputDir} && yarn install`)
-    } else if (process.env.npm_execpath.includes('npm')) {
-        exec(`cd ${outputDir} && npm install`)
-    }
+    if (process.env.npm_execpath) {
+        if (process.env.npm_execpath.includes('yarn')) {
+            console.log('Installing dependencies, this may take a minute')
+            exec(`cd ${outputDir} && yarn install`)
+        } else if (process.env.npm_execpath.includes('npm')) {
+            console.log('Installing dependencies, this may take a minute')
+            exec(`cd ${outputDir} && npm install`)
+        }
+    } 
     rl.close()
 }
 
